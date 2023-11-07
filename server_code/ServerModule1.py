@@ -24,6 +24,6 @@ iris = load_iris()
 
 @anvil.server.callable
 def predict_iris(sepal_length, sepal_width, petal_length, petal_width):
-  model = joblib.load( 'knn3.skmodel') # data_files['knn.skmodel'])
+  model = joblib.load( './knn3.skmodel') # data_files['knn.skmodel'])
   classification = model.predict([[sepal_length, sepal_width, petal_length, petal_width]])
   return iris.target_names[classification][0]

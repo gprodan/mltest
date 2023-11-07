@@ -1,5 +1,8 @@
 dependencies: []
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
 package_name: MLTest
 allow_embedding: false
 name: MLTest

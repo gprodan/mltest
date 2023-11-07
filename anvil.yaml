@@ -10,5 +10,19 @@ runtime_options: {version: 2, client_version: '3', server_version: python3-sandb
   server_spec: null}
 metadata: {}
 startup_form: Form1
-db_schema: {}
+db_schema:
+  files:
+    client: none
+    server: full
+    columns:
+    - name: path
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: media
+      admin_ui: {width: 200, order: 1}
+      type: media
+    - name: file_version
+      admin_ui: {width: 200, order: 2}
+      type: string
+    title: files
 renamed: true

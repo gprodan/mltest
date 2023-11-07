@@ -7,7 +7,81 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - type: ColumnPanel
+    properties: {role: outlined-card, col_widths: '{"TIDITI":30,"SFCIIS":15,"OYUQJY":15}'}
+    name: outlined_card_1
+    layout_properties: {grid_position: 'QTAOMA,PNINOX'}
+    components:
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: Sepal length, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: slLabel
+      layout_properties: {grid_position: 'ASXQNZ,TIDITI XEPQRC,KODUDL'}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: (cm),
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: sepal_lenght
+      layout_properties: {grid_position: 'ASXQNZ,TIDITI XEPQRC,NTPMKW'}
+      event_bindings: {pressed_enter: sepal_lenght_pressed_enter}
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: Sepal width, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: swLabel
+      layout_properties: {grid_position: 'ASXQNZ,TIDITI SKIBFG,THBHYU'}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: (cm),
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: sepal_width
+      layout_properties: {grid_position: 'ASXQNZ,TIDITI SKIBFG,FTRJIZ', slot: title}
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: Petal length, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: plLabel
+      layout_properties: {grid_position: 'ASXQNZ,SFCIIS GEWARR,KQJSZT'}
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: Petal width, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: pwLabel
+      layout_properties: {grid_position: 'ASXQNZ,SFCIIS QMAABZ,FBZGBV'}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: (cm),
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: petal_length
+      layout_properties: {grid_position: 'ASXQNZ,OYUQJY RZBDAI,GBXGVQ'}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: (cm),
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: petal_width
+      layout_properties: {grid_position: 'ASXQNZ,OYUQJY WEIJRB,HRHAUY'}
+  - type: Button
+    properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Categorise, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: categorise_button
+    layout_properties: {grid_position: 'YWGXQQ,JJBPJT'}
+    event_bindings: {click: categorise_button_click}
+  - type: Label
+    properties: {}
+    name: species_label
+    layout_properties: {grid_position: 'RZGMAU,LYYQPT'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
